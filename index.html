@@ -1,0 +1,204 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==title========================-->
+    <title>Elite Care Hospital</title>
+    <!--==CSS==========================-->
+    <link rel="stylesheet" href="style.css">
+    <!--==Fav-icon=====================-->  
+    <link rel="shortcut icon" href="images/fav-icon.png">
+    <!--==Import-poppins-font==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--==Font-Awesome-for-icons=====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+    <!--==Hero-Section========================-->
+    <section id="hero">
+          
+        <!--==navigation====================-->
+            <nav class="navigation">
+        <!--**logo*********-->
+            <a href="#" class="logo"><span>Elite Care</span>Hospital</a>
+        <!--**menu*********-->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Department</a></li>
+                <li><a href="#">Blogs & Patient Reviews</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+    <!--**Appointment-btn*******-->
+        <a href="#" class="nav-appointment-btn">Appointment</a>
+        </nav><!--nav-end-->
+        
+
+    <!--==Content============================-->
+    <div class="hero-content">
+    <!--**text****************-->
+        <div class="hero-text">
+            <h1>Feel Better About Finding HealthCare</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, vitae ex! Fuga similique repudiandae molestiae libero.</p>
+    <!--btns-->
+            <div class="hero-text-btns">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Find Doctor's</a>
+                <a href="#"><i class="fa-solid fa-check"></i>Book Appointment</a>
+            </div>
+        </div>
+
+   <!-- Stat Slideshow -->
+
+   <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Hospital building.jpg" style="width:100%">
+      <div class="text">Hospital view</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/registration sector.jpg" style="width:100%">
+      <div class="text">Registration sector</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/healthcare facility.jpg" style="width:100%">
+      <div class="text">Healthcare facility</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+    <!-- End Slideshow-->
+
+        
+    <!--==appointment-search===============================-->
+    <div class="appointment-search-container">
+        <h3>Find Best HealthCare</h3>
+        <!--**search******************-->
+        <div class="appointment-search">
+            <!--**doctor-search-box*******-->
+            <div class="appo-search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search Doctor Here or For Advice">
+            </div>
+            <!--**set-your-location*******-->
+            <div class="appo-search-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Set Your Location">
+            </div>
+            <!--**btn*********************-->
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!--==Hero-Section end========================-->
+    <!-- footer section  -->
+
+    <footer>
+        <div class="footer-container">
+            <!--**comoany-box**-->
+            <div class="footer-company-box">
+                <!--logo-->
+                <a href="#" class="logo"><span>Elite Care</span>Hospital</a>
+                <!--details-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas neque repudiandae nihil.</p>
+                <!--social-box-->
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>Main Link's</strong>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Department</a></li>
+                <li><a href="#">Blogs & Patient Reviews</a></li>
+                <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>External Link's</strong>
+                <ul>
+                    <li><a href="#">Our Products</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <!--**link-box***-->
+            <div class="footer-link-box">
+                <strong>External Link's</strong>
+                <ul>
+                    <li><a href="#">Our Products</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            
+   
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <!-- jquery cdn link 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     custom js file link 
+    <script src="./js/main.js"></script>  -->    
+    
+</body>
+</html>
+                    
